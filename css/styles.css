@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,500;0,700;1,400&family=IBM+Plex+Serif:wght@200;400;500;600;700&family=Pacifico&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+.my_container {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+}
+
+.cart_indicator{
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+
+.page_title {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.my_button{
+    font-size: .9em;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.my_button:disabled{
+    opacity: 0.7;
+}
+
+.my_input {
+    background-color: #f1f3f5;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 15px;
+    border: 1.5px solid transparent;
+}
+
+.my_input:focus{
+    border: 1.5px solid #000;
+    outline: none;
+}
