@@ -6,7 +6,7 @@ Welcome to the saga of Dopo-Frontend-II, the unexpected sequel to the critically
 
 Alright, buckle up because this story is a bit twisty. So, you see, once upon a coding spree, Dopo-Frontend emerged into the GitHub universe for coursework one. Everything was fine and dandy, and the code lived happily ever after... until coursework two arrived.
 
-In a shocking turn of events, Dopo-Frontend-II was born, seemingly out of nowhere. It's like the unexpected sequel to your favorite movie that you didn't even know you needed (El camino to Breaking Bad basically). Confusing? Absolutely. Necessary? Well, that's debatable.
+In a shocking turn of events, Dopo-Frontend-II was born, seemingly out of nowhere. It's like the unexpected sequel to your favorite series that you didn't even know you needed (El camino to Breaking Bad basically). Confusing? Absolutely. Necessary? Well, that's debatable.
 
 ### 🚀 The Sequel That Outgrew Its Predecessor
 
