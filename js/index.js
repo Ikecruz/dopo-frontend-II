@@ -114,8 +114,45 @@ var app = new Vue({
         acceptJustLetters: function (event) {
             if (!/^[a-zA-Z]+$/.test(event.key)) event.preventDefault();
         },
-        finish: function () {
-            alert("Order completed")
+        finish: async function () {
+            const order = {
+                name: this.checkout.fullname,
+                phoneNumber: this.checkout.mobile,
+                items: this.cart
+            }
+            
+            try {
+                
+                await fetch("http://dopo-api.eu-west-2.elasticbeanstalk.com/orders", {
+                    method: "POST",
+                    body: JSON.stringify(order),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+
+                await this.updateStock()
+
+                alert("Order completed")
+
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        updateStock: async function () {
+            try {
+                
+                await fetch("http://dopo-api.eu-west-2.elasticbeanstalk.com/activities", {
+                    method: "PUT",
+                    body: JSON.stringify(this.cart),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+
+            } catch (error) {
+                console.log(error)
+            }
         }
     },
     computed: {
