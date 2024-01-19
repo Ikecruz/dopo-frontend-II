@@ -20,7 +20,7 @@ Dopo-Frontend-II is not just a mere continuation; it's the evolution, the next l
 
 ###  🤷‍♂️ Why?
 
-To be honest, even the code itself might be questioning its existence. Blame coursework requirements, blame the matrix glitching, or just blame it on a coding whim – we don't have all the answers.
+Why two separate repos? Well, blame it on Linus Torvalds for making it possible for me to code this stuff on my Linux computer. Thanks, Linus, for enabling this coding adventures.
 
 ### 🤔 Why This Readme?
 
