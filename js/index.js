@@ -16,7 +16,7 @@ var app = new Vue({
         getActivities: async function () {
             try {
                 
-                const data = await fetch("http://dopo-api.eu-west-2.elasticbeanstalk.com/activities");
+                const data = await fetch("https://dopo-api.eu-west-2.elasticbeanstalk.com/activities");
                 this.activities = await data.json()
 
             } catch (error) {
@@ -41,7 +41,7 @@ var app = new Vue({
         searchActivities: async function () {
             try {
                 
-                const response = await fetch(`http://dopo-api.eu-west-2.elasticbeanstalk.com/activities/search?q=${this.searchKeyword}`)
+                const response = await fetch(`https://dopo-api.eu-west-2.elasticbeanstalk.com/activities/search?q=${this.searchKeyword}`)
                 this.activities = await response.json()
 
             } catch (error) {
@@ -123,7 +123,7 @@ var app = new Vue({
             
             try {
                 
-                await fetch("http://dopo-api.eu-west-2.elasticbeanstalk.com/orders", {
+                await fetch("https://dopo-api.eu-west-2.elasticbeanstalk.com/orders", {
                     method: "POST",
                     body: JSON.stringify(order),
                     headers: {
@@ -142,7 +142,7 @@ var app = new Vue({
         updateStock: async function () {
             try {
                 
-                await fetch("http://dopo-api.eu-west-2.elasticbeanstalk.com/activities", {
+                await fetch("https://dopo-api.eu-west-2.elasticbeanstalk.com/activities", {
                     method: "PUT",
                     body: JSON.stringify(this.cart),
                     headers: {
